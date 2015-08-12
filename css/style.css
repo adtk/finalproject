@@ -16,12 +16,12 @@
 
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  padding: 0 0 10px 10px;
 }
 
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  padding: 0 10px 10px 0;
 }
 
 .wrapper {
@@ -44,7 +44,7 @@
 }
 
 
-.nav li {
+.nav li { /* better way to make this more responsive & keep it centered?*/
   display: inline-block;
   padding: 10px;
 }
@@ -60,20 +60,56 @@
 .main {
   width: 100%;
   background-color: #FFF;
+  margin: 0px auto;
 }
 
 .aside {
-  width: 20%;
+  width: 30%;
   float: left;
   background-color: #FFEBCD;
 }
 
+.aside img {
+ padding: 20px 60px; /* better way to center this? */
+}
+
+.aside p {
+  padding: 20px;
+  text-align: center;
+}
+
 .section {
-  width: 80%;
+  width: 70%;
   float: right;
+}
+
+.section p {
+  padding: 20px;
 }
 
 .footer {
   background-color: #7FFFD4;
   clear: both;
+}
+
+@media only screen and (max-width:768px) {
+
+  .header {
+    width: 100%;
+  }
+
+  .aside {
+    width: 100%;
+    float: none;
+  }
+
+  .section {
+    width: 100%;
+    float: none;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
 }
