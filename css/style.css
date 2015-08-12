@@ -7,11 +7,7 @@
 
 .clearfix:after {
      content: ".";
-     display: block;
      clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
 }
 
 .clear {
@@ -28,43 +24,56 @@
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
-body {
-  font-family: sans-serif;
-  font-size: 12px;
-}
-
-
 .wrapper {
   width: 100%;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0px auto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-size: 12px;
+  border: 5px solid white;
 }
 
 .header {
-  background-color: green;
+  background-color: #F0F8FF;
+  font-size: 20px;
+    position: relative;
 }
 
 .header img {
-  padding: 10px 100px;
+  padding: 30px 500px 10px;
+}
+
+
+.nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.about {
+  padding-left: 500px;
+}
+
+.menu {
+  padding-right: 500px;
 }
 
 .main {
-  width: 100%
+  width: 100%;
+  background-color: #FFF;
 }
+
 .aside {
-  background-color: blue;
-  width: 50%;
-  float: right;
+  width: 20%;
+  float: left;
+  background-color: #FFEBCD;
 }
 
 .section {
-  background-color: red;
-  width: 50%;
-  float: left;
+  width: 80%;
+  float: right;
 }
 
 .footer {
-  background-color: yellow;
-  box-sizing: border-box;
+  background-color: #7FFFD4;
   clear: both;
 }
