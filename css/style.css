@@ -6,7 +6,8 @@
 }
 
 .clearfix:after {
-     content: ".";
+     content: "";
+     display: table;
      clear: both;
 }
 
@@ -25,71 +26,86 @@
 }
 
 .wrapper {
+  max-width: 1500px;
   width: 100%;
   margin: 0px auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 16px;
   border: 5px solid white;
+}
+
+.dropdown {
+  display: none;
+  float: right;
+  position: 5px;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: black;
 }
 
 .header {
   background-color: #F0F8FF;
-  font-size: 20px;
-    position: relative;
-}
-
-.header img {
-  padding: 30px 500px 10px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 
-.nav li { /* better way to make this more responsive & keep it centered?*/
+.nav li {
   display: inline-block;
-  padding: 10px;
+  padding: 30px;
 }
 
-.about {
-  padding-left: 500px;
+.nav a {
+  text-decoration: none;
+  color: black;
 }
 
-.menu {
-  padding-right: 500px;
-}
 
 .main {
   width: 100%;
   background-color: #FFF;
   margin: 0px auto;
+  padding: 30px 0px;
 }
 
 .aside {
   width: 30%;
   float: left;
-  background-color: #FFEBCD;
+  text-align: center;
 }
 
-.aside img {
- padding: 20px 60px; /* better way to center this? */
+.content {
+  border-right: 1px solid grey;
 }
 
 .aside p {
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .section {
   width: 70%;
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section p {
-  padding: 20px;
+  font-size: 1.5rem;
+  padding: 100px 20px;
 }
 
 .footer {
-  background-color: #7FFFD4;
-  clear: both;
+  background-color: #FFEBCD;
+  text-align: center;
+}
+
+.social img {
+  padding: 25px;
 }
 
 @media only screen and (max-width:768px) {
@@ -98,9 +114,25 @@
     width: 100%;
   }
 
+  .nav li {
+    display: block;
+    border-bottom: 2px solid white;
+  }
+
+
   .aside {
     width: 100%;
     float: none;
+    padding: 0px 30px;
+  }
+
+  .content {
+    border-right: none;
+    border-bottom: 1px solid grey;
+  }
+
+  .aside p {
+    text-align: center;
   }
 
   .section {
@@ -108,8 +140,13 @@
     float: none;
   }
 
+  .section p {
+    text-align: center;
+  }
+
   .footer {
     width: 100%;
+
   }
 
 }

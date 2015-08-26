@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="description" content="Change this!"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title></title>
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
@@ -18,22 +20,30 @@
             <li><a class="about" href="#">About</a></li>
             <li><a class="blog" href="#">Blog</a></li>
             <li><a class="contact" href="#">Contact</a></li>
-            <li><a class="menu" href="#">Menu</a></li>
+            <li><a class="menu" href="#">Menu</a>
+              <div class="dropdown">
+                <div><a href="#">Stuff</a></div>
+                <div><a href="#">Things</a></div>
+                <div><a href="#">Stuff</a></div>
+              </div>
+            </li>
           </ul>
         </div>
      </div>
 
      <div class="main clearfix">
        <div class="aside">
-         <img src="http://placehold.it/250x250/cdcdcd" href="#" alt="picture">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         <div class="content">
+           "<img src="http://i57.tinypic.com/orikbk.png" href="#" alt="picture">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         </div>
        </div>
        <div class="section">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer clearfix">
       <div class="social">
         <img src="#" href="#"> <img src="#" href="#"> <img src="#" href="#">
       </div>
