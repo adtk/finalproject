@@ -2,46 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <meta name="description" content="This is a boilerplate for building websites."/>
-    <title>Boilerplate</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <meta name="description" content="Change this!"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
 
   <body>
-    <div container="wrapper">
+    <div class="wrapper">
 
-      <div container="header">
-        <img src="#" href="#" alt="logo">
-        <div container="nav">
+      <div class="header">
+        <img src="images/hbird.svg" href="#" alt="logo">
+        <div class="nav">
           <ul>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li><a class="about" href="#">About</a></li>
+            <li><a class="blog" href="#">Blog</a></li>
+            <li><a class="contact" href="#">Contact</a></li>
+            <li><a class="menu" href="#">Menu</a>
+              <div class="dropdown">
+                <div><a href="#">Stuff</a></div>
+                <div><a href="#">Things</a></div>
+                <div><a href="#">Stuff</a></div>
+              </div>
+            </li>
           </ul>
         </div>
      </div>
 
-     <div container="main">
-       <div container="aside">
-         <img src="#" href="#" alt="picture">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+     <div class="main clearfix">
+       <div class="aside">
+         <div class="content">
+           "<img src="http://i57.tinypic.com/orikbk.png" href="#" alt="picture">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         </div>
        </div>
-       <div container="section">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       <div class="section">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
 
-    <div container="footer">
-      <div container="social">
+    <div class="footer clearfix">
+      <div class="social">
         <img src="#" href="#"> <img src="#" href="#"> <img src="#" href="#">
       </div>
     </div>
 
   </div>
 
-    <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 
 
   </body>
