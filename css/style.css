@@ -28,133 +28,195 @@
 .wrapper {
   max-width: 2000px;
   width: 100%;
-  margin: 0px auto;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif, 'Raleway';
+  font-weight: 400;
   font-size: 16px;
-  border: 5px solid white;
-}
-
-.dropdown {
-  display: none;
-  float: right;
-  position: 5px;
-}
-
-.dropdown a {
-  text-decoration: none;
-  color: black;
+  border: 10px solid white;
 }
 
 .header {
-  background-image: url();
-  background-color: #D1CCB4;
-  background-position: top;
-  background-size: cover;
-  font-size: 1.5rem;
+  width: 100%;
+  padding: 60px;
   text-align: center;
+  font-size: 1rem;
+  background: url(../images/019-01-01.svg);
 }
 
-.header img {
+.main-menu {
   position: relative;
-  fill: #2C262D;
 }
 
-
-.nav li {
+.main-menu a {
   display: inline-block;
-  padding: 30px;
-}
-
-.nav a {
+  padding: 10px;
+  margin: 35px 40px 0px 0px;
+  border: 4px solid black;
+  background-color: white;
   text-decoration: none;
   color: black;
+}
+
+.main-menu a:hover {
+  color: white;
+  background: black;
 }
 
 
 .main {
   width: 100%;
   background-color: #FFF;
-  margin: 0px auto;
-  padding: 30px 0px;
-}
-
-.aside {
-  width: 30%;
-  float: left;
   text-align: center;
 }
 
-.content {
-  border-right: 1px solid grey;
+.main h1 {
+  padding: 40px 0px 25px 0px;
+  font-family: 'Raleway';
+   -webkit-text-stroke: 2px black;
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
 }
 
-.aside p {
-  padding: 20px;
+.main p {
   text-align: left;
+  padding: 20px 0px 50px 0px;
 }
 
-.section {
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
+.about {
+  width: 60%;
+  margin: 0 auto;
 }
 
-.section p {
-  font-size: 1.5rem;
-  padding: 100px 20px;
+.about p {
+  line-height: 150%;
+}
+
+
+.menu-wrapper {
+  width: 100%;
+  background: url(../images/2.jpg);
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+
+.menu {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: #FBFFF1;
+  opacity: .7;
+}
+
+.menu-tiles {
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.menu a {
+  width: 200px;
+  font-size: 1.1rem;
+  display: inline-block;
+  border: 4px solid black;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: white;
+  background: black;
+}
+
+.contact {
+  width: 60%;
+  margin: 0 auto;
+}
+
+section {
+  margin: 20px 0px 40px 0px;
+}
+
+.arrow-up {
+  margin: 0 auto;
+  position: relative;
+  top: 1px;
+	width: 0;
+	height: 0;
+  margin-top: 10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid black;
+}
+
+#form {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: #726659;
+
+  border: solid 4px black;
+  border-bottom: none;
+}
+
+textarea {
+  width: 100%;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: #726659;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+
+  border: solid 4px black;
+}
+
+#submit {
+  width: 20%;
+  padding: 10px;
+  margin: 10px 0px 0px 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: black;
+  outline:none;
+  cursor: pointer;
+  border: solid 4px black;
+}
+
+#submit:hover {
+  color: white;
+  background: black;
 }
 
 .footer {
-  background-color: #FFEBCD;
+  background-color: #D3CEBC;
+  float: left;
+  margin: 0px auto;
+  width: 100%;
   text-align: center;
 }
 
 .social img {
   padding: 25px;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width:768px) {
-
-  .header {
-    width: 100%;
-  }
-
-  .nav li {
-    display: block;
-    border-bottom: 2px solid white;
-  }
-
-
-  .aside {
-    width: 100%;
-    float: none;
-    padding: 0px 30px;
-  }
-
-  .content {
-    border-right: none;
-    border-bottom: 1px solid grey;
-  }
-
-  .aside p {
-    text-align: center;
-  }
-
-  .section {
-    width: 100%;
-    float: none;
-  }
-
-  .section p {
-    text-align: center;
-  }
-
-  .footer {
-    width: 100%;
-
-  }
-
-}

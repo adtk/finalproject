@@ -7,54 +7,67 @@
 
     <title></title>
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
 
   <body>
+
     <div class="wrapper">
 
-      <div class="header">
+    <div class="header">
         <img src="images/hbird.svg" href="#" alt="logo">
-        <div class="nav">
-          <ul>
-            <li><a class="about" href="#">About</a></li>
-            <li><a class="blog" href="#">Blog</a></li>
-            <li><a class="contact" href="#">Contact</a></li>
-            <li><a class="menu" href="#">Menu</a>
-              <div class="dropdown">
-                <div><a href="#">Stuff</a></div>
-                <div><a href="#">Things</a></div>
-                <div><a href="#">Stuff</a></div>
-              </div>
-            </li>
-          </ul>
+        <div class="main-menu">
+          <a class="1" href="#">MENU</a>
+          <a class="2" href="#">CONTACT</a>
+          <a class="3" href="#">ABOUT</a>
+          <a class="4" href="#">BLOG</a>
         </div>
      </div>
 
-     <div class="main clearfix">
-       <div class="aside">
-         <div class="content">
-           "<img src="http://i57.tinypic.com/orikbk.png" href="#" alt="picture">
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-         </div>
+       <div class="main">
+             <div class="about">
+               <h1>WHO WE ARE</h1>
+               <p> Hummingbirds & Horses is a catering company based in Baltimore, MD. Lorem ipsum dolor sit amet, est audire malorum conceptam te. An aeterno elaboraret has. Quis honestatis vix ad, vel ne modus vivendum. Pri mundi appareat at, at nec erat doctus, ea justo pertinax mei. No homero dolorum copiosae vim.<br /><br />Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+            </div>
+
+            <div class="menu-wrapper">
+              <div class="menu">
+                 <h1>MENUS</h1>
+                 <div class="menu-tiles">
+                <a href="#">BIRTHDAYS</a> <a href="#">WEDDINGS</a><br /> <a href="#">PIES & MORE</a> <a href="#">COFFEE & DOUGHNUTS</a>
+                </div>
+              </div>
+            </div>
+
+             <div class="contact">
+               <h1>CONTACT</h1>
+                <section>
+                   <div class="arrow-up"></div>
+                   <form id="form" class="topBefore">
+
+              		  <input id="name" type="text" placeholder="NAME">
+              		  <input id="email" type="text" placeholder="E-MAIL">
+              		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                    <input id="submit" type="submit" value="SUBMIT">
+                  </form>
+                </section>
+             </div>
+          </div>
        </div>
-       <div class="section">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
 
     <div class="footer clearfix">
       <div class="social">
-        <img src="#" href="#"> <img src="#" href="#"> <img src="#" href="#">
+
+
+
+        <img src="images/facebook32.png" href="#"> <img src="images/twitter32.png" href="#"> <img src="images/instagram32.png" href="#">
       </div>
     </div>
 
-  </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="jQuery.scrollSpeed.js"></script>
     <script src="js/script.js"></script>
-
-
   </body>
   </head>
 </html>
